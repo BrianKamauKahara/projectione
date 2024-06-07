@@ -7,7 +7,7 @@ from src.mcqgenerator.utils import read_file, get_table_data
 import streamlit as st
 from langchain.callbacks import get_openai_callback
 from langchain.prompts import PromptTemplate
-from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
+##from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 
 #loading json file
 with open('Response.json','r') as file:
@@ -41,7 +41,7 @@ with st.form("user_inputs"):
                 text = read_file(uploaded_file)
                 # Count tokens and the cost of API call
                 with get_openai_callback() as cb:
-                    response = generate_evaluate_chain(
+                    """ response = generate_evaluate_chain(
                         {
                             "text": text,
                             "number": mcq_count,
@@ -49,7 +49,10 @@ with st.form("user_inputs"):
                             "tone": tone,
                             "response_json": json.dumps(RESPONSE_JSON)
                         }
+                        
                     )
+                    """
+                    pass
                 # st.write(response)
 
             except Exception as e:
