@@ -41,6 +41,7 @@ with st.form("user_inputs"):
                 text = read_file(uploaded_file)
                 # Count tokens and the cost of API call
                 with get_openai_callback() as cb:
+                    #You need a working API
                     """ response = generate_evaluate_chain(
                         {
                             "text": text,
@@ -52,7 +53,6 @@ with st.form("user_inputs"):
                         
                     )
                     """
-                    pass
                 # st.write(response)
 
             except Exception as e:
