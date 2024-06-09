@@ -17,11 +17,11 @@ load_dotenv()
 #Access the environment variables just loaded
 key = os.getenv("OPENAI_API_KEY")
 
-
+brother = 'lol'
 
       
 llm= ChatOpenAI(
-        openai_api_key='lol',
+        openai_api_key=brother,
         model_name="gpt-3.5-turbo", 
         temperature=0.7
         )
