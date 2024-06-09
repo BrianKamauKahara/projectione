@@ -13,7 +13,7 @@ from langchain.chains import SequentialChain
 
 #Load environment variables from the .env file
 load_dotenv()
-
+print(load_dotenv())
 #Access the environment variables just loaded
 key = os.getenv("NEW_OPENAI_API_KEY")
 bro = os.getenv("bro")
