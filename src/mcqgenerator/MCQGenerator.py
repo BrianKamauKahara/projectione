@@ -2,8 +2,8 @@ import os
 import json
 import traceback
 from dotenv import load_dotenv
-#from src.mcqgenerator.utils import read_file, get_table_data
-#from src.mcqgenerator.logger import logging
+from src.mcqgenerator.utils import read_file, get_table_data
+from src.mcqgenerator.logger import logging
 
 #Necessary packages from langchain
 from langchain.chat_models import ChatOpenAI
