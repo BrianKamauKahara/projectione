@@ -2,8 +2,8 @@ import os
 import json
 import traceback
 from dotenv import load_dotenv
-from src.mcqgenerator.utils import read_file, get_table_data
-from src.mcqgenerator.logger import logging
+from utils import read_file, get_table_data
+from logger import logging
 
 #Necessary packages from langchain
 from langchain.chat_models import ChatOpenAI
@@ -15,7 +15,8 @@ from langchain.chains import SequentialChain
 load_dotenv()
 
 #Access the environment variables just loaded
-key = os.getenv("NEW_OPENAI_API_KEY")
+key = os.getenv("OPENAI_API_KEY")
+
 
       
 llm= ChatOpenAI(
