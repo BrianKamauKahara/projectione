@@ -70,14 +70,15 @@ with st.form("user_inputs"):
                     quiz = response.get("quiz", None)
                     if quiz is not None:
                         table_data = get_table_data(quiz)
-                        if table_data is not None:
+                        print(table_data ,'--------------------------')
+                        if table_data[0]:
                             df = pd.DataFrame(table_data)
                             df.index = df.index + 1
                             st.table(df)
                             # Display the review in a text box as well
                             st.text_area(label="Review", value=response["review"])
                         else:
-                            st.error("Error in table data")
+                            st.error("Could not generate table with that data")
                     
                     else:
                         st.write(response)
