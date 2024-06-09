@@ -12,13 +12,14 @@ from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 
 #Load environment variables from the .env file
-load_dotenv()
+#THE COMMENTED CODE WILL NOT WORK, BUT DONT WORRY WHY
+""" load_dotenv()
 print(load_dotenv())
 #Access the environment variables just loaded
 key = os.getenv("NEW_OPENAI_API_KEY")
 bro = os.getenv("bro")
 print(key,'--------------------------------------------------------------------------------------------',bro)
-brother = str(key)
+brother = str(key) """
 
       
 llm= ChatOpenAI(
