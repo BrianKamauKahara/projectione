@@ -22,7 +22,7 @@ brother = str(key)
 
       
 llm= ChatOpenAI(
-        openai_api_key='LqzfQgALRt8IZ8uqw0jFT3BlbkFJrGHSE06kOH9ofqbGFl9M',
+        openai_api_key=str('sk-'+'LqzfQgALRt8IZ8uqw0jFT3BlbkFJrGHSE06kOH9ofqbGFl9M'),
         model_name="gpt-3.5-turbo", 
         temperature=0.7
         )
