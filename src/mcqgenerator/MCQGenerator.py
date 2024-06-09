@@ -17,7 +17,7 @@ load_dotenv()
 #Access the environment variables just loaded
 key = os.getenv("OPENAI_API_KEY")
 
-brother = 'lol'
+brother = str(key)
 
       
 llm= ChatOpenAI(
