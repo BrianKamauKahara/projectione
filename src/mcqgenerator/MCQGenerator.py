@@ -15,8 +15,8 @@ from langchain.chains import SequentialChain
 load_dotenv()
 
 #Access the environment variables just loaded
-key = os.getenv("OPENAI_API_KEY")
-
+key = os.getenv("NEW_OPENAI_API_KEY")
+print(key,'--------------------------------------------------------------------------------------------')
 brother = str(key)
 
       
