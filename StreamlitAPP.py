@@ -53,15 +53,6 @@ with st.form("user_inputs"):
                         }
                         
                     )
-                
-                # st.write(response)
-
-                except Exception as e:
-                    traceback.print_exception(type(e), e, e.__traceback__)
-                    
-                ##st.error("Error")
-
-                finally:
                     print(f"Total Tokens:{cb.total_tokens}")
                     print(f"Prompt Tokens:{cb.prompt_tokens}")
                     print(f"Completion Tokens:{cb.completion_tokens}")
@@ -83,4 +74,11 @@ with st.form("user_inputs"):
                         
                         else:
                             st.write(response)
+                
+                # st.write(response)
+
+                except Exception as e:
+                    traceback.print_exception(type(e), e, e.__traceback__)
+                    
+
 
