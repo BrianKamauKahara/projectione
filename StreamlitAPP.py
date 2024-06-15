@@ -42,19 +42,19 @@ with st.form("user_inputs"):
                     text = read_file(uploaded_file)
                     # Count tokens and the cost of API call
                     
-                        #You need a working API
-                        response = generate_evaluate_chain(
-                            {
-                                "text": text,
-                                "number": mcq_count,
-                                "subject": subject,
-                                "tone": tone,
-                                "response_json": json.dumps(RESPONSE_JSON)
-                            }
-                            
-                        )
-                    
-                    # st.write(response)
+                    #You need a working API
+                    response = generate_evaluate_chain(
+                        {
+                            "text": text,
+                            "number": mcq_count,
+                            "subject": subject,
+                            "tone": tone,
+                            "response_json": json.dumps(RESPONSE_JSON)
+                        }
+                        
+                    )
+                
+                # st.write(response)
 
                 except Exception as e:
                     traceback.print_exception(type(e), e, e.__traceback__)
